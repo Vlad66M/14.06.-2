@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while(confirm("Ввести новую строку?")){
+            var text = prompt("Введите текст");
+            var color = prompt("Введите цвет");
+            var size = +prompt("Введите размер шрифта");
+            marker(text, color, size);
+        }
+
+        function marker(text, color, size){
+            document.write(`<p style="color: ${color}; font-size: ${size}px; font-family: "Comic Sans MS", "Comic Sans"">${text}</p>`);
+        }
+    </script>
+    
+</body>
+</html>
